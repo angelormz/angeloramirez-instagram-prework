@@ -1,0 +1,107 @@
+body {
+    background-color: lightgrey;
+    display: block;
+}
+
+:root {
+    font-size: 14px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
+  #mainHeader {
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  main {
+    padding-bottom: 1rem;
+  }
+  
+  article {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  article + article {
+    margin-top: 1rem;
+  }
+
+  article header {
+    z-index: 20;
+    background: #ffffff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  article header h2 {
+    margin: 0;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #262626;
+  }
+  
+  article header h2 a {
+    text-decoration: none;
+    color: #262626;
+  }
+  
+  article header img {
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 100%;
+    border: 1px solid #262626;
+  }
+  
+  article section {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  
+  article section .img-wrapper {
+    padding-top: 100%;
+    position: relative;
+  }
+  
+  article section img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
